@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom'
 
 const Tribu = () => {
 
-  const parametros = useParams()
-  const id = parametros.id
+  const {id} = useParams()
 
   const [tribu, setTribu] = React.useState([])
 
