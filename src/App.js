@@ -1,5 +1,3 @@
-
-import './App.css';
 import Comentario from './components/Comentario';
 import Saludo from './components/Saludo';
 
