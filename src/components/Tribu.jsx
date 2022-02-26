@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom'
 const Tribu = () => {
 
   const parametros = useParams()
-  console.log(parametros)
   const id = parametros.id
 
   const [tribu, setTribu] = React.useState([])
@@ -17,7 +16,7 @@ const Tribu = () => {
   }
 
     React.useEffect(()=>{
-        obtenerDatos()
+       obtenerDatos()
     },[])
   return (
     <div>
