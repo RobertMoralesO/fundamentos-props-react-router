@@ -18,7 +18,7 @@ const Tribu = () => {
 
     React.useEffect(()=>{
         obtenerDatos()
-    }, [id])
+    },[])
   return (
     <div>
         <h2>{tribu.name}</h2>
