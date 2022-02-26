@@ -9,14 +9,13 @@ const Tribu = () => {
 
   const [tribu, setTribu] = React.useState([])
 
-  const obtenerDatos = async () =>{
-      const data = await fetch(`https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${id}`)
-      const tribu = await data.json()
-      setTribu(tribu)
-  }
-
     React.useEffect(()=>{
-       obtenerDatos()
+        const obtenerDatos = async () =>{
+            const data = await fetch(`https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${id}`)
+            const tribu = await data.json()
+            setTribu(tribu)
+        }
+        obtenerDatos()
     },[])
   return (
     <div>
